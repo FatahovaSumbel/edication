@@ -1,0 +1,82 @@
+/* Общие стили   */
+/* bootstrap автоматически перекрывает некоторые базовые настройки */
+a {
+    text-decoration: none;
+}
+
+.indent {
+    margin: 0px 5%;
+}
+
+body {
+    background-color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.blue-text {
+    color: #1E3A8A;
+}
+
+.grey-text {
+    color: #BBBBBB;
+}
+
+.purple-background {
+    background-color: #3D3D66;
+}
+
+.blue-background {
+    background-color: #1E3A8A;
+}
+
+.grey-background {
+    background-color: #2A2A2A;
+}
+
+.Darkgrey-background {
+    background-color: #1A1919;
+}
+
+
+
+/* 404 страница */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 40px 20px;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 500px;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--btn-bg);
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 28px;
+    margin: 20px 0 10px;
+    color: var(--text-main);
+}
+
+.error-text {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.error-content .btn {
+    display: inline-block;
+    width: auto;
+}
