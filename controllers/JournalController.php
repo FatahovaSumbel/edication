@@ -1,9 +1,9 @@
 <?
 require_once __DIR__ . '/../core/Controller.php';
 
-class AboutController extends Controller
+class JournalController extends Controller
 {
-    public function about()
+    public function journal()
     {
         global $connect;
 
@@ -20,9 +20,9 @@ class AboutController extends Controller
         // $stmt->execute();
         // $advantages = $stmt->fetchAll();
 
-        $this->render('about', [
+        $this->render('journal', [
             // название страницы отображаемое в браузере
-            'title' => 'о нас',
+            'title' => 'Журнал',
             // передаём данные выборки из бд
             // 'service'=>$service,
             // 'workes'=>$workes,

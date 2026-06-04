@@ -38,15 +38,19 @@
     
     <!---------------------------------------------------Шапка--------------------------------------------------->
     <header class='purple-background'>
-        <div class="header-info">
+        <i class="fa fa-book fa-3x black-text" aria-hidden="true"></i>
+        <div class="header-info fn-size-25">
             <a href="/" class='white-text'>Библиотека</a>
             <a href="/" class='white-text'>О проекте</a>
             <a href="/" class='white-text'>Форум</a>
             <a href="/" class='white-text'>Проекты</a>
-            <a href="/" class='white-text'>Посещаемость</a>
+            <a href="/journal" class='white-text'>Посещаемость</a>
             <a href="/" class='white-text'>Практики</a>
         </div>
-        <button></button>
+        <div>
+            <button class='theme'><img src="./assets/img/moon-white.png" alt=""></button>
+            <a class='click blue-background white-text fn-size-25'>Войти</a>
+        </div>
     </header>
 
     
@@ -58,7 +62,7 @@
 
 
     <!---------------------------------------------------Подвал--------------------------------------------------->
-    <footer>
+    <footer class='purple-background'>
     <!-- тут разместить подвал -->
     </footer>
 
