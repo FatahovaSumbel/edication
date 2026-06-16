@@ -62,7 +62,7 @@
         </tr>
     </table>
     <h4 class='text-center'>Журнал посещаемости</h4>
-    <div class="table-wrapper scroll-horizontal">
+    <div class="table-wrapper-main scroll-horizontal">
         <table class="visit_table">
             <tr>
                 <td class="fix" style="height: 90px; min-width: 170px;"></td>
