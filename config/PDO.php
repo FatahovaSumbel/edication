@@ -1,6 +1,6 @@
 <?
     $host = 'localhost';
-    $dbname = '';
+    $dbname = 'mirpsy_edication';
     $username = 'mysql';
     $password = 'mysql';
 

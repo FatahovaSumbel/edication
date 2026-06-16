@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../core/Controller.php';
 
 // шаблон класса для логики страницы
-class HomeController extends Controller
+class ProjectController extends Controller
 {
     public function index()
     {
@@ -13,9 +13,11 @@ class HomeController extends Controller
         // $about = $stmt3->fetchAll(PDO::FETCH_ASSOC);
 
 
-        $this->render('glav', [
-            'title' => 'Главная',
-
+        $this->render('project', [
+            'title' => 'Проекты',
+            // для добавление js-файла ОБЯЗАТЕЛЬНО пишите через ', ' (запятую с пробелом)
+            'js' => 'slider.js, accordion.js',
+            // 'about' => $about,
         ]);
     }
 }

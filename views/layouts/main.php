@@ -1,10 +1,4 @@
 <?php session_start();?>
-<!-- ОБРАТИТЕ ВНИМАНИЕ!  
- Данный файл является шаблоном, при редактировании не удаляйте следующие части кода:
-    <Title> 
-    js рендера
-    $content
--->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -35,38 +29,78 @@
     
 </head>
 <body>
-    
     <!---------------------------------------------------Шапка--------------------------------------------------->
-    <header class='purple-background'>
-        <i class="fa fa-book fa-3x black-text" aria-hidden="true"></i>
-        <div class="header-info fn-size-25">
-            <a href="/" class='white-text'>Библиотека</a>
-            <a href="/" class='white-text'>О проекте</a>
-            <a href="/" class='white-text'>Форум</a>
-            <a href="/" class='white-text'>Проекты</a>
-            <a href="/journal" class='white-text'>Посещаемость</a>
-            <a href="/" class='white-text'>Практики</a>
-        </div>
-        <div>
-            <button class='theme'><img src="./assets/img/moon-white.png" alt=""></button>
-            <a class='click blue-background white-text fn-size-25'>Войти</a>
+   <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                <a class="navbar-brand px-3 py-2" href="/glav"><i class="fa fa-book fa-3x black-text" aria-hidden="true"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="/library">Библиотека</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">О проекте</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/project">Проекты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/journal">Посещаемость</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Форум</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Практика</a></li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center justify-content-center header-controls">
+                        <button class="theme-toggle-btn mr-3" aria-label="Переключить тему">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                        <a href="login" class="btn btn-primary btn-custom px-4">Войти</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
     
     <!---------------------------------------------------Основа--------------------------------------------------->
-    <main class='indent'>
+    <main class=''>
         <!-- сюда подключится представление из папки view, НЕ УДАЛЯТЬ-->
         <?= $content ?>
     </main>
 
 
     <!---------------------------------------------------Подвал--------------------------------------------------->
-    <footer class='purple-background'>
-    <!-- тут разместить подвал -->
+    <footer class="main-footer pt-5 pb-3">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white-50 font-weight-bold mb-2">edication.q-pax.ru</h5>
+                    <p class="text-muted small pr-md-5">Простой и понятный интерфейс для эффективной учёбы и работы</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/library">Библиотека</a></li>
+                        <li><a href="/about">О проекте</a></li>
+                        <li><a href="/project">Проекты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/journal">Посещаемость</a></li>
+                        <li><a href="#">Практика</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="row">
+                <div class="col-100 text-center w-100">
+                    <p class="copyright-text mb-0 small">edication.q-pax.ru © 2026</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--Bootstrap JS-->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
