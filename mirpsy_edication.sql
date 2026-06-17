@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 16 2026 г., 07:44
+-- Время создания: Июн 17 2026 г., 07:09
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.1.32
 
@@ -916,9 +916,9 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `login` varchar(30) NOT NULL,
   `password` varchar(512) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `family` varchar(20) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `surname` varchar(20) NOT NULL,
+  `family` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `surname` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `group_id` int(11) NOT NULL,
   `expel` int(11) NOT NULL DEFAULT '0' COMMENT 'на отчисление',
   `expel_from` int(11) DEFAULT NULL COMMENT 'группа из которой отчислен',
@@ -1280,7 +1280,8 @@ INSERT INTO `user` (`id`, `login`, `password`, `family`, `name`, `surname`, `gro
 (362, '', '', 'Мишахина', 'Руслана', 'Руслановна', 23, 1, 22, ''),
 (363, '', '', 'Сухарева', 'Ангелина', 'Вячеславовна', 22, 0, NULL, ''),
 (364, '', '', 'Хвастунов', 'Ян', 'Владиславович', 21, 0, NULL, ''),
-(365, '', '', 'Толстых', 'Матвей', '', 21, 0, NULL, '');
+(365, '', '', 'Толстых', 'Матвей', '', 21, 0, NULL, ''),
+(366, 'Gaara16', '$2y$10$aOtMtKDOlB.B/LUxeAi.7uxXQBwWZlT.YG6PfI4AdVZFE9MnSXD4q', NULL, NULL, NULL, 4, 0, NULL, 'Gaara16@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -6783,7 +6784,7 @@ ALTER TABLE `topic`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=366;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=367;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

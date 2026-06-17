@@ -14,6 +14,7 @@
 
 a {
   text-decoration: none;
+  color: var(--color-text-main);
 }
 .click {
   color: var(--color-text-main);
@@ -23,26 +24,35 @@ a {
   border: none;
 }
 
-html,
-body {
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--color-bg-dark);
   color: var(--color-text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto; 
+}
+
+.main-footer {
+  background-color: var(--color-header-dark);
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
 }
 
 .indent {
   margin: 80px 10% 0px;
 }
-
-body {
-  background-color: black;
-}
-
 /* 404 страница */
 .error-container {
   display: flex;
@@ -1088,4 +1098,18 @@ h6 {
   background: none;
   border: none;
   color: var(--color-text-main);
+}
+
+/* Аккаунт */
+.acсount-wrapper {
+  width: 60%;
+  padding: 30px;
+  margin: 100px auto;
+  background: var(--color-grey-background);
+  border: 2px solid var(--color-header-dark);
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }

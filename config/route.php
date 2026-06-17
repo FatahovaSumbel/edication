@@ -20,6 +20,7 @@ return [
     ['/page/{id}', 'LibraryController@page'],   // ID конкретного учебника
     ['/lesson/{id}', 'LibraryController@lesson'], // ID конкретного урока
     ['/admin', 'AdminController@index'],
+    ['/account', 'AccountController@index'],
     ['*', 'DYNAMIC_MODULES_FALLBACK'],
     ['*', 'DYNAMIC_MODULES_FALLBACK', 'POST']
 ];

@@ -45,6 +45,7 @@ class AuthController extends Controller
             $login = trim($_POST['uname'] ?? '');
             $email = trim($_POST['email'] ?? '');
             $password = $_POST['pswd'] ?? '';
+            $id = 4;
 
             if ($_POST['pswd'] !== $_POST['pwd-confirm']) {
                 $message = [
@@ -61,13 +62,14 @@ class AuthController extends Controller
                 ];
             } else {
                 $stmt = $connect->prepare(
-                    "INSERT INTO user (login, email, password) VALUES (?, ?, ?)"
+                    "INSERT INTO user (login, email, password, group_id) VALUES (?, ?, ?, ?)"
                 );
 
                 $stmt->execute([
                     $login,
                     $email,
-                    password_hash($password, PASSWORD_DEFAULT)
+                    password_hash($password, PASSWORD_DEFAULT),
+                    $id
                 ]);
 
                 $message = [
