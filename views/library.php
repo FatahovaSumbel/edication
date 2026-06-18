@@ -5,7 +5,7 @@
         <?php foreach ($libraries as $library) { ?>
             <div class="library-card">
                 <a href="/topic/<?= $library['id'] ?>">
-                    <img src="<?= htmlspecialchars($library['image']) ?>" class="library-img">
+                    <img src="/<?= htmlspecialchars($library['image']) ?>" class="library-img">
                     <h2><?= htmlspecialchars($library['name']) ?></h2>
                     <p><?= htmlspecialchars($library['description']) ?></p>
                 </a>
