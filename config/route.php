@@ -19,6 +19,8 @@ return [
     ['/topic/{id}', 'LibraryController@topic'], // ID категории (HTML, CSS и т.д.)
     ['/page/{id}', 'LibraryController@page'],   // ID конкретного учебника
     ['/lesson/{id}', 'LibraryController@lesson'], // ID конкретного урока
+    ['/docs', 'DocController@index'],
+    ['/docs/detail/{id}', 'DocController@detail'],
     ['/admin', 'AdminController@index'],
     ['/account', 'AccountController@index'],
     ['*', 'DYNAMIC_MODULES_FALLBACK'],

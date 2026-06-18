@@ -1,8 +1,8 @@
 <?
     $host = 'localhost';
     $dbname = 'mirpsy_edication';
-    $username = 'mysql';
-    $password = 'mysql';
+    $username = 'root';
+    $password = '';
 
 try {
     $connect = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8", $username, $password);

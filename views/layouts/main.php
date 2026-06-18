@@ -45,7 +45,7 @@
                         <li class="nav-item"><a class="nav-link" href="/project">Проекты</a></li>
                         <li class="nav-item"><a class="nav-link" href="/journal">Посещаемость</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#">Форум</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Практика</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/docs">Практика</a></li>
                     </ul>
                     
                     <div class="d-flex align-items-center justify-content-center header-controls">

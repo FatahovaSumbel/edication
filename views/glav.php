@@ -39,7 +39,7 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <h2 class="text-white font-weight-bold mb-3">Интерактивное обучение</h2>
                 <p class="text-muted mb-5">Пожалуйста спасите эту грешную душу ,я заебался</p>
-                <a href="#" class="btn btn-primary btn-custom px-4 py-2">Перейти в библиотеку</a>
+                <a href="/library" class="btn btn-primary btn-custom px-4 py-2">Перейти в библиотеку</a>
             </div>
             <div class="col-lg-6">
                 <div class="image-placeholder-block d-flex align-items-center justify-content-center text-dark">
